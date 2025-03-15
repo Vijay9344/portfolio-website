@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -15,36 +15,40 @@ body {
 /* Header */
 header {
   background-image: url(bg.jpg);
-  background-size: cover;
+  background-size:contain;
   color: black;
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+nav button {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  background-color: #f1f1f1;
+
 }
 
-nav ul li {
+nav button {
   display: inline;
+
 }
 
-nav ul li a {
-  color: black;
+nav button a {
+  color: violet;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
   padding: 10px 15px;
   border-radius: 5px;
 }
 
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
+nav button a:hover {
 }
 
 /* Sections */
@@ -110,12 +114,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: width 2s;
 }
 
 li:hover {
-  background: #e9ecef;
-  width: 80%;
+  
 }
 
 .edit-btn {
@@ -124,6 +126,7 @@ li:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: none;
+  justify-content: center;
 }
 
 .edit-btn:hover {
@@ -142,6 +145,7 @@ li:hover {
 .delete-btn:hover {
   background: #c82333;
 }
+
 
 /* Footer */
 footer {
